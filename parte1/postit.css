@@ -1,0 +1,78 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.postit {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+  flex-wrap: wrap;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 4px;
+  transform: rotate(-2deg);
+  transition: transform 0.3s;
+  font-family: "Indie Flower", cursive;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #666666;
+  padding: 40px;
+  max-width: 1200px;
+}
+
+/* colori diversi per i post-it */
+.postit:nth-child(1) {
+  background-color: #fff8b0;
+} /* giallo chiaro */
+.postit:nth-child(2) {
+  transform: rotate(2deg);
+  transition: transform 0.3s;
+  background-color: #d9f7c3;
+} /* verde chiaro */
+.postit:nth-child(3) {
+  transform: rotate(-4deg);
+  transition: transform 0.3s;
+  background-color: #d3c7f5;
+} /* lilla */
+.postit:nth-child(4) {
+  background-color: #c9f3cb;
+} /* verde menta */
+.postit:nth-child(5) {
+  background-color: #fff59e;
+} /* giallo */
+.postit:nth-child(6) {
+  background-color: #c7bbf6;
+} /* viola chiaro */
+.postit:nth-child(7) {
+  background-color: #ffecb3;
+} /* giallo/arancio chiaro */
+.postit:nth-child(8) {
+  transform: rotate(2deg);
+  transition: transform 0.3s;
+  background-color: #d7f5cf;
+} /* verde chiaro */
+
+/* effetto hover */
+.postit:hover {
+  transform: rotate(0deg) scale(1.1);
+}
+
+p {
+  font-weight: 300;
+}
